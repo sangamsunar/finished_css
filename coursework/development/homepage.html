@@ -1,0 +1,477 @@
+<html>
+  <head>
+    <title>home</title>
+    <meta name="description" content="Grocery store"/>
+		<meta name="keywords" content="HTML,CSS,JS"/>
+		<meta name="author" content="Prashanta Thapa, Sangam Sunar, Dawa Dolma Gurung, Sarrok Magar, Pranjal Chettri"/>
+    <style>
+      /* CSS for the navigation bar */
+      .navbar0{
+        background-color:rgb(255, 181, 52);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family:consolas;
+        padding: 10px;
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+      }
+      /*styling of nav bar and icon*/
+      .nav-links0{
+        display: flex;
+        gap: 40px;  
+      }
+      .navbar0 a{
+        color: #000000;
+        text-align: center;
+        text-decoration: none;
+        transition: 100ms;   
+      }
+
+      .navbar0 a:hover {
+        color: white;
+      }
+
+      .nav-links0 {
+        margin:0 300;
+      }
+
+      .icons0 img{
+        margin:0 15px ;
+
+      }
+      .icon0{
+        transition: 0.25s;
+      }
+
+      .icon0:hover{
+        filter: invert();
+      }
+
+      .mybutton:hover .icon{
+        filter: invert();
+      }
+
+      .mybutton{
+        background-color: #47d34c; /* Green background */
+            padding: 8px 15px;
+            border: none; 
+            border-radius: 50px; 
+            transition: all 0.5s ease-in-out;      
+      }
+      .myButton:hover {
+            background-color: #2ac040;
+      
+      }
+
+      .back{
+        position: relative;
+        width: 100%; 
+      }
+      /*css of general body*/
+    .text{
+    position: absolute;
+    top: 56%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: rgb(11, 140, 76);
+    font-size: 80px;
+    font-family: Georgia;
+    text-align: left justify;
+    line-height: 1.2;
+  }
+
+  .explore{
+    background-color: #9fd30fbd; 
+            padding: 8px 20px 20px;
+            border-radius: 50px;  
+            font-size: 50px;
+            letter-spacing: 2px;
+            text-decoration: none;
+            font-family: consolas;
+    }
+
+    .explore:hover{
+     color: antiquewhite;
+    }
+
+  .content {                   
+    padding: 4%;
+    margin: 2%;    
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));  
+    gap: 2rem;
+    align-items: center;
+    font-size: 20px;
+    
+  }
+
+.foot {
+    padding: 18px 11% 10px;
+    display: flex; 
+    justify-content:center;
+    align-items: top;
+}
+
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  
+}
+    
+ footer{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: rgb(193, 242, 176);
+  text-align: left;
+ }
+
+ .end{
+  text-align: center;
+  padding: 20px;
+  }
+
+  .follow{
+    padding: 4%;
+    margin: 2%;    
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    display: flex;
+  }
+
+  .container-grid{
+    background-color:rgb(251, 246, 238);
+  }
+
+.productinfo{
+  text-align: center;
+  padding: 100px;
+  font-size: 40px;
+  font-family: consolas;
+}
+
+/*stying the container*/
+  .container{
+        max-width: 350px;
+        height: 450px;
+        display:grid;
+        place-items:center;
+        margin-top: 30px;
+        padding: 10px 0px;
+        border-bottom-right-radius: 10px; 
+        border-bottom-left-radius: 10px;
+        cursor:pointer;
+        position:relative;
+        background-color: rgb(251, 246, 238)
+      }
+      .container, .prt_price{
+        transition: 0.5s; 
+      }
+      .container::before{
+        content: '';
+        background-color: rgb(101, 183, 65);
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        position:absolute;
+        z-index: -1;
+        transform: scaleY(0);
+        transform-origin:bottom;
+        transition: transform 0.5s ease-in-out;
+      }
+      .container{
+        z-index: 1;
+      }
+      .container:hover::before{
+        transform:scaleY(1);
+      }
+
+      .prt_img{
+      width: 300px;
+      height: 350px;
+      object-fit:cover; 
+      }
+      .prt-details{
+        text-align:center;
+      }
+      .prt_name, .prt_price{
+        margin:0;
+
+      }
+      .prt_name{
+        font-size: 25px;
+        font-weight:bold;
+        margin: 10px;
+      }
+
+      .prt_price{
+        display:inline-block;
+        font-size: 20px;
+        padding: 12px 50px ;
+        color:white;
+        font-weight: bolder;
+        background-color:rgb(101, 183, 65);
+        border-radius: 8px;
+      }
+      .container:hover .prt_price{
+        padding: 12px 80px;
+      }
+      .container:hover .prt_price{
+        background-color:white;
+        color: green;
+      }
+      .prt_price:active{
+        background-color:black;
+        color: green;
+      }
+
+
+      .special {
+  display: flex;
+  align-items: center; 
+  background-color: rgb(193, 242, 176); 
+  padding: 20px;
+  border-radius: 20%;
+}
+
+.left-image {
+  width: 400px; 
+  height: 400px;
+  margin-right: 200px;
+}
+
+.text-section {
+  flex-grow: 1; 
+  font-size: 30px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.whychoose{
+  display: flex; 
+  padding-top: 20px; 
+}
+
+.why{
+  padding: 100px 100px 100px;
+  font-size: 60px;
+  font-family: consolas;
+}
+
+.readmore{
+  background-color: #78f272;
+  font-size: 30px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 20px;
+}
+/*css of footer*/
+.email_java{
+  display:flex; 
+  justify-content: center;
+  align-items: center;
+}
+.email_java form input[type="email"]{
+    width: 300px;
+    max-width: 100%;
+    padding: 12px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin: 0px 10px 20px 0px ;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.email_java form input[type="submit"]{
+    padding: 10px 10px;
+    background: var(gray);
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    margin: 0px 10px 20px 0px ;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+      li:hover{
+        color: white;
+        cursor: pointer;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    
+    <!-- Navigation bar || header-->
+    <header class="navbar0">
+      <img src="resources/homepage/logo.png">
+      <div class="nav-links0">
+        <a href="homepage.html" class="nav-button0">Home</a>
+        <a href="pages/products/products.html" class="nav-button0">Products</a>
+        <a href="pages/blog/blog.html" class="nav-button0">Blog</a>
+        <a href="pages/research.html" class="nav-button0">Research</a>
+        <a href="pages/aboutus.html" class="nav-button0">About Us</a>
+      </div>
+      <div class="icons0">
+        <img src="resources/homepage/search.png" width="29" class="icon0">
+        <img src="resources/homepage/account.png" width="25" class="icon0">
+        <button class="mybutton" id="myButton"><img src="resources/homepage/cart.png" width="25" alt="Button Image" class="icon0"></button>
+      </div>
+      </header>
+      <!-- Navigation bar || header-->
+    <img class="back" src="resources/homepage/bg_1-transformed.jpeg" style="
+    width:100%; 
+    height:100%;
+    ">
+    <div class="text">
+      Fresh Finds, Daily Delights!<br><br>
+    <a href="pages/products/products.html" class="explore">Explore</a>
+    </div>
+
+
+    <!-- for text above products -->
+
+
+
+    <div class="productinfo">
+      Check Out Our New Products
+    </div>
+  
+    <div class="container-grid" style="
+    background-color: rgb(255, 255, 255);
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items:center;
+    margin-bottom: 10px;
+    ">
+    <a href="pages/products/products.html">
+      <div class="container">
+        <img class="prt_img" src="resources/product/photos/chips/cheetos.png"> 
+        <div class="prt-details">
+          <p class="prt_name">Cheetos</p>
+          <p class="prt_price">Rs. 50</p>
+        </div>
+      </div>
+    </a>
+    
+    <a href="pages/products/products.html">
+      <div class="container">
+        <img class="prt_img" src="resources/product/photos/chips/doritos.png"> 
+        <div class="prt-details">
+          <p class="prt_name">Doritos</p>
+          <p class="prt_price">Rs. 100</p>
+        </div>
+      </div>
+    </a>
+      
+    <a href="pages/products/products.html">
+      <div class="container">
+        <img class="prt_img" src="resources/product/photos/chips/lays.png"> 
+        <div class="prt-details">
+          <p class="prt_name">Lays</p>
+          <p class="prt_price">Rs. 50</p>
+        </div>
+      </div>
+    </a>
+    </div><br><br>
+
+    
+    <!--creating a section of special content-->
+    <div class="special">
+      <img src="resources/homepage/drinks.png" alt="Image" class="left-image">
+      <div class="text-section">
+        <h2>Special offer</h2>
+        <p>"Find fantastic savings at our grocery store! Explore our specials on fresh produce, pantry essentials, and more. Don't miss out – shop now and save big!"</p>
+      </div>
+    </div>
+    
+
+    <section class="whychoose">
+      <div class="why"><b>Why Choose Us?? </b><br><br>
+        <a class="readmore" type="button" href="pages/aboutus.html">Read More</a>
+      </div>
+      <div>
+        <li><img src="resources/homepage/fast.png" height="60px" width="100px"></li>
+        <p class="text1"><h1>Fast Shipping</h1>Quick order processing, expedited shipping options, real-time
+          tracking, and efficient<br> communication to ensure products
+          are delivered promptly to customers.</h4></p><br>
+      <li><img src="resources/homepage/flower.png" height="80px" width="90px"></li>
+        <p class="text2"><h1>Guarantee </h1> Shop worry-free knowing that your satisfaction is our priority. We stand 
+          behind the quality of our products <br>and offer guarantee on every purchase. If you're not completely satisfied, let us know, and
+           we'll make it right.<br> Your happiness is our commitment."</p><br>
+      <li><img src="resources/homepage/hand.png" height="60px" width="100px"> </li>
+      <p class="text3"><h1>Return and Refund Policy</h1> We want you to shop with confidence! If you're not completely satisfied with 
+        your <br>purchase, you can return it within 24 hour for a full refund or exchange. Items must <br> be unused and in their original
+         packaging. Certain exclusions may apply.
+        </p><br><br>
+      </div>
+    </section>
+    <!--starting of footer-->
+    <footer>
+      <section class="foot">
+        <div class="content">
+          <h3>Policy Info</h3>
+          <li>Cancle and Refund</li>
+          <li>Privacy Policy</li>
+          <li>Terms and Conditions</li>
+          <li>Security</li>
+        </div>
+
+        <div class="content">
+          <h3>Quick Links</h3>
+          <li>Home</li>
+          <li>Blog</li>
+          <li>Product</li>
+          <li>Research</li>
+          <li>About Us</li>
+        </div>
+
+        <div class="content">
+          <h3>Company Info</h3>
+          <li>About US</li>
+          <li>Code Of Conduct</li>
+          <li>Follow us</li>
+          <img src="resources/homepage/insta.png" width="40px" height="40px">
+          <img src="resources/homepage/fb.png" width="40px" height="40px">
+          <img src="resources/homepage/tt.png" width="40px" height="40px">
+        </div>
+
+    
+      </section>
+
+      <div class="email_java">
+        <form name="myform" onsubmit="return validateform()">
+          <input type="email" name="email" placeholder="E-mail"></br> 
+          <input type= "submit" name="submit">
+        </form>
+      </div>
+      
+      <div class="end">
+        ©2024 All Right Reserved By GreenGrub
+      <div>
+    </footer>
+     <!--ending of footer-->
+  </body>
+  <script>
+    //implimenting form validation using javascript
+    function validateform()
+    {
+     let email=document.myform.email.value;
+    
+     if(email==null || email=="")
+     {
+      alert("Email can't be blank");
+      return false;
+     }
+     else if(email=true)
+     {
+      alert("Email Sent")
+     }
+    }
+  </script>
+</html>

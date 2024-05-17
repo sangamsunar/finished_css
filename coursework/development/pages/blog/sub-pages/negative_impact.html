@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Negative Impact</title>
+        <link rel="stylesheet" href="../../../style.css">
+        <style>
+           .main-container{
+                display: flex;
+                background-color: rgb(193, 242, 176);
+                padding-top: 100px;
+           }
+           .title-container{
+                width:50%;
+                text-align: center;
+                font-size: 100px;
+           }
+           .para-container{
+                width:50%;
+                margin-top: 50px;
+                letter-spacing: 2px;
+                line-height: 1.5;
+            }
+            p{
+                margin:0;
+            }   
+            .img1{
+                width: 450px;
+                height:500px;
+                border-radius: 20px;
+                transition: 1s;
+                object-fit: cover;
+                margin-top: 10px;
+            }
+            .img1:hover{
+                border-radius: 0;
+            }
+              /*css of a bottom container*/
+            .Sub-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+        
+            }
+            .another-container{
+                background-color: rgb(251, 246, 238);
+                position: relative;
+                display: flex;
+            }
+            .more-img{
+                width: 400px;
+                height:350px;
+                object-fit: cover;
+            }
+            .title-2{
+                position: absolute;
+                top: 100px;
+                bottom: 10%;
+                left: 140px;
+                font-size: 25px;
+                color: burlywood;
+            }
+            p{
+                margin-top: 0;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!--header-->
+        <header class="navbar0">
+            <img src="../../../resources/homepage/logo.png">
+            <div class="nav-links0">
+              <a href="../../../homepage.html" class="nav-button0">Home</a>
+              <a href="../../products/products.html" class="nav-button0">Products</a>
+              <a href="/development/pages/blog/blog.html" class="nav-button0">Blog</a>
+              <a href="/development/pages/research.html" class="nav-button0">Research</a>
+              <a href="/development/pages/aboutus.html" class="nav-button0">About Us</a>
+            </div>
+            <div class="icons0">
+              <img src="../../../resources/homepage/search.png" width="29" class="icon0">
+              <img src="../../../resources/homepage/account.png" width="25" class="icon0">
+              <!--add to cart counter-->
+                <button class="mybutton" id="myButton"><img src="../../../resources/homepage/cart.png" width="25" alt="Button Image" class="icon0"></button>
+                <span id="counter">0</span>
+            </div>
+          </header>
+        <div class="main-container">
+            <div class="title-container"><p class="title">Negative Impact</p>
+            <img src="../../../resources/blog/neg.jpg" class="img1">
+            </div>
+            <div class="para-container">
+                <p class="paragraph"> The marvels of technology are undeniable, yet like anything, excessive exposure can become
+                overwhelming. Our constant connectivity poses challenges in disconnecting and finding moments 
+                to relax. Additionally, prolonged screen time can result in physical discomforts such as 
+                eyestrain, hand-wrist ailments, and disrupted sleep patterns.
+                Unfortunately, spending excessive time in virtual environments also carries significant
+                risks. The rapid dissemination of misinformation, cyberbullying, and other negative online
+                behaviors can exacerbate mental health issues like anxiety, depression and addiction. social
+                media, in particular, can influence perceptions of self-worth and belonging, impacting real-life relationships.
+                It's imperative to approach online content with discernment and avoid accepting
+                everything at face value.<br><br>
+
+                Our constant connectivity poses challenges in disconnecting and finding moments 
+                to relax. Additionally, prolonged screen time can result in physical discomforts such as 
+                eyestrain, hand-wrist ailments, and disrupted sleep patterns.
+                Unfortunately, spending excessive time in virtual environments also carries significant
+                risks. The rapid dissemination of misinformation, cyberbullying, and other negative online
+                behaviors can exacerbate mental health issues like anxiety, depression and addiction. social
+                media, in particular, can influence perceptions of self-worth and belonging, impacting real-life relationships.
+                It's imperative to approach online content with discernment and avoid accepting
+                everything at face value.
+                </p>
+            </div>
+        </div>
+        <!--bottom container-->
+        <div class="Sub-container">
+            <div class="another-container">
+            <a href="../sub-pages/positive_impact.html"><div>
+            <img src="../../../resources/blog/good.jpg" class="more-img img1">
+            <p class="title-2">Positive Impact</p>
+            </div>
+            </a>
+        </div>
+        <div class="another-container">
+            <a href="../sub-pages/negative_impact.html"><div>
+                <img src="../../../resources/blog/neg.jpg" class="more-img img1">
+                <p class="title-2">Negative Impact</p>
+            </div>
+            </a>
+        </div>
+        <div class="another-container">
+            <a href="../sub-pages/impact_business.html"><div>
+                <img src="../../../resources/blog/workplace.jpg" class="more-img img1">
+                <p class="title-2">Business Impact</p>
+            </div>
+            </a>
+        </div>
+        </div>
+        <footer>
+            <section class="foot0">
+              <div class="content0">
+                <h3>Policy Info</h3>
+                <li>Cancle and Refund</li>
+                <li>Privacy Policy</li>
+                <li>Terms and Conditions</li>
+                <li>Security</li>
+              </div>
+      
+              <div class="content0">
+                <h3>Quick Links</h3>
+                <li>Home</li>
+                <li>Blog</li>
+                <li>Product</li>
+                <li>Research</li>
+                <li>About Us</li>
+              </div>
+      
+              <div class="content0">
+                <h3>Company Info</h3>
+                <li>About US</li>
+                <li>Code Of Conduct</li>
+                <li>Follow us</li>
+                <img src="/development/resources/homepage/insta.png" width="40px" height="40px">
+                <img src="/development/resources/homepage/fb.png" width="40px" height="40px">
+                <img src="/development/resources/homepage/tt.png" width="40px" height="40px">
+              </div>
+      
+          
+            </section>
+      
+            <div class="email_java">
+              <form name="myform" onsubmit="return validateform()">
+                <input type="email" name="email" placeholder="E-mail"></br> 
+                <input type= "submit" name="submit">
+              </form>
+            </div>
+            
+            <div class="end">
+              ©2024 All Right Reserved By GreenGrub
+            <div>
+        </footer>
+    </body>
+</html>

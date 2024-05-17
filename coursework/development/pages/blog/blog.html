@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blog</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .on-top{
+                 font-family:cursive;
+                 font-size: 100px;
+                 text-align: center;
+                 color:whitesmoke;
+                 text-shadow: 5px 5px 5px rgb(193, 242, 176);
+                
+            }
+            .super-div{
+                font-family:Arial;
+                background-image: url(../../resources/blog/backpic.jpg);
+                color:rgb(251, 246, 238);
+                font-style: oblique;
+            
+            }
+            .main-fontainer{
+                display:grid;
+                grid-template-columns:1fr 1fr;
+                place-items: center;
+                
+            }
+             .fontainer{
+                display: flex;
+                flex-direction: column;
+                width:650px;
+                text-align:center;
+                gap: 50px;
+            }
+            .fontainer-2{   
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                margin-top:25px;
+                padding-bottom:25px;
+            }
+            .fitle{
+                font-size:30px;
+                font-weight:bold;
+                text-align:center;
+  
+            }
+            .t1{
+                font-size:50px;
+                font-weight:bold;
+                padding-top:70px;
+            }
+          
+            .img1{
+                margin-top:25px;
+                height:500px;
+                width : 650px;
+                object-fit:cover;
+                border-radius:20px;
+                transition: 2s; 
+            }
+            a{
+                
+                text-decoration:none;
+                color:aliceblue;
+            }
+            .fontainer:hover img{
+                box-shadow: 10px 10px 15px rgba(216, 209, 209, 0.399); 
+                transform:scale(1.05);
+            }
+            p{
+                font-size: 30px;
+            }
+            
+            
+        </style>
+        <link rel="stylesheet" href="../../style.css">
+    </head>
+    <body>
+        <!--start of header-->
+        <header class="navbar0">
+            <img src="../../resources/homepage/logo.png">
+            <div class="nav-links0">
+              <a href="../../homepage.html" class="nav-button0">Home</a>
+              <a href="../products/products.html" class="nav-button0">Products</a>
+              <a href="../blog/blog.html" class="nav-button0">Blog</a>
+              <a href="../research.html" class="nav-button0">Research</a>
+              <a href="../aboutus.html" class="nav-button0">About Us</a>
+            </div>
+            <div class="icons0">
+              <img src="../../resources/homepage/search.png" width="29" class="icon0">
+              <img src="../../resources/homepage/account.png" width="25" class="icon0">
+              <!--add to cart counter-->
+                <button class="mybutton" id="myButton"><img src="../../resources/homepage/cart.png" width="25" alt="Button Image" class="icon0"></button>
+                <span id="counter">0</span>
+            </div>
+        </header>
+        <!--end of header-->
+        <div class="super-div">
+            <div class="mini-nav" style="
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+                font-size: 20px;
+                margin-bottom:50px;
+                padding-top:100px;
+                display:flex;
+                justify-content: center;
+                color:rgb(255, 181, 52);
+                ">
+                <p style="
+                font-size:2em;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                box-shadow: 0 0 5px rgb(255, 181, 52);
+                padding: 0px 10px;
+                ">BLOG</p>
+            </div>
+        <div class="main-fontainer"> 
+            <a href="../blog/sub-pages/technology.html" target="_blank">
+                <div class="fontainer">
+                <img class="img1" src="../../resources/blog/about_tech.jpg">
+                <p class="fitle">Technology</p>
+                </div>
+            </a>
+            <a href="../blog/sub-pages/impact_business.html" target="_blank">
+                <div class="fontainer">
+                    <img class="img1" src="../../resources/blog/positive.jpg"> 
+                    <p class="fitle">Positive Impact</p>
+                </div>
+            </a>
+            <a href="../blog/sub-pages/negative_impact.html" target="_blank">
+                <div class="fontainer">
+                    <img class="img1" src="../../resources/blog/negative.jpg">
+                    <p class="fitle">Negative Impact</p>
+                </div>
+            </a>
+           <a href="../blog/sub-pages/impact_business.html" target="_blank">
+            <div class="fontainer">
+                <img class="img1" src="../../resources/blog/business.jpg">
+                <p class="fitle">Impact in Business</p>
+            </div>
+           </a>
+           
+        </div>
+     
+        <p class ="fitle t1">Conclusion</p>
+        <div class="fontainer-2">
+          
+            <p style=
+            "text-align: center;
+            font-size:30px;
+            width:1000px;"
+        > 
+        Technology encompasses the tools, methods, and processes used to create, produce, and utilize
+        goods and services, drawing from scientific and mathematical principles. It's instrumental in 
+        goods and services, drawing from scientific and mathematical principles. It's instrumental in 
+        convenience enhancing communication, education, agriculture, and access to information, it 
+        also presents challenges such as excessive screen time leading to physical discomforts and 
+        mental health issues. Businesses benefit from integrating Information Technology (IT), 
+        improving efficiency, security, and competitiveness, essential for success in the digital 
+        era.
+        </p>
+        </div>
+    </div>
+    <footer>
+        <section class="foot0">
+          <div class="content0">
+            <h3>Policy Info</h3>
+            <li>Cancle and Refund</li>
+            <li>Privacy Policy</li>
+            <li>Terms and Conditions</li>
+            <li>Security</li>
+          </div>
+  
+          <div class="content0">
+            <h3>Quick Links</h3>
+            <li>Home</li>
+            <li>Blog</li>
+            <li>Product</li>
+            <li>Research</li>
+            <li>About Us</li>
+          </div>
+  
+          <div class="content0">
+            <h3>Company Info</h3>
+            <li>About US</li>
+            <li>Code Of Conduct</li>
+            <li>Follow us</li>
+            <img src="../../resources/homepage/insta.png" width="40px" height="40px">
+            <img src="../../resources/homepage/fb.png" width="40px" height="40px">
+            <img src="../../resources/homepage/tt.png" width="40px" height="40px">
+          </div>
+  
+      
+        </section>
+  
+        <div class="email_java">
+          <form name="myform" onsubmit="return validateform()">
+            <input type="email" name="email" placeholder="E-mail"></br> 
+            <input type= "submit" name="submit">
+          </form>
+        </div>
+        
+        <div class="end">
+          ©2024 All Right Reserved By GreenGrub
+        <div>
+    </footer>
+    </body>
+</html>

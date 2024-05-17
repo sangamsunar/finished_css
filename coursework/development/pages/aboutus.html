@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Us</title>
+        <meta name="description" content="Grocery store"/>
+		<meta name="keywords" content="HTML,CSS,JS"/>
+		<meta name="author" content="Prashanta Thapa, Sangam Sunar, Dawa Dolma Gurung, Sarrok Thapa, Pranjal Chhetri"/>
+        <link rel="stylesheet" href="../style.css">
+        <style>
+            body{
+                background-image: url(../resources/about_us/product-background.png);
+                font-family:'Times New Roman', Times, serif;
+            }
+            *{
+                padding:0;
+                margin:0;
+            }
+            table {
+                width: 700px;
+                border-collapse: collapse;
+                margin: 25px 0;
+                font-size: 18px;
+                text-align: left;
+                background-color: rgb(193, 242, 176);
+                border-radius: 16px;
+            }
+            th, td {
+                padding: 12px;
+                border-bottom: 1px solid #ddd;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+
+            /*container css*/
+            .profile-main-container{
+                border: 5px solid rgb(255, 181, 52);
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+            }
+            .profile-container{
+                display:flex;
+                justify-content: space-evenly;
+                align-items: top;
+                padding: 40px 0;  
+                padding-top:100px;  
+            }
+            .pp{
+                width: 400px;
+                height: 430px;
+                border-bottom-left-radius: 46px;
+                border-top-right-radius: 46px;
+                object-fit: cover;
+                transition: ease-in-out 0.5s;
+                
+                
+            }
+            .pp:hover{
+                border-bottom-left-radius: 0px;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 46px;
+                border-top-left-radius: 46px;
+                object-fit: cover;
+                box-shadow: 0 0 30px rgb(101, 183, 65);
+            }
+            .role, .getintouch{
+                display:inline-block;
+                color:rgb(255, 181, 52);
+                font-weight: bold;
+                font-size:3em;
+                background-color:rgb(251, 246, 238);
+                padding: 10px 50px;
+                border-bottom-right-radius: 46px;
+                border-top-left-radius: 46px;
+            }
+            /*form css*/
+            .getintouch{
+                background-color: rgb(255, 181, 52);
+                color:rgb(101, 183, 65);
+                text-align: center;
+            }
+            .form-main-container{
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 5px solid rgb(255, 181, 52);
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+            }
+            .form-container{
+            display: inline-block;
+            }
+            input{
+                display:block;
+                width:100%;
+                height: 28px;
+                border-color:rgb(255, 181, 52);
+            }
+            .agreement{
+                color:gray;
+            }
+            .submit_button{
+                color:white;
+                background-color:rgb(49, 95, 243);
+                border: none;
+                border-radius: 25px;
+                font-size: 24px;
+            }
+            hr{
+                
+                border-color:rgb(255, 181, 52);
+            }
+            img:hover{
+                cursor:pointer; 
+            }
+            table:hover{
+                cursor:grab;
+            }
+        </style>
+        <style href="../javascript/form_validation.js"></style>
+    </head>
+    <body>
+           <!-- Navigation bar || header-->
+        <header class="navbar0">
+            <img src="../resources/homepage/logo.png">
+            <div class="nav-links0">
+            <a href="../homepage.html" class="nav-button0">Home</a>
+            <a href="../pages/products/products.html" class="nav-button0">Products</a>
+            <a href="../pages/blog/blog.html" class="nav-button0">Blog</a>
+            <a href="../pages/research.html" class="nav-button0">Research</a>
+            <a href="../pages/aboutus.html" class="nav-button0">About Us</a>
+            </div>
+            <div class="icons0">
+            <img src="../resources/homepage/search.png" width="29" class="icon0">
+            <img src="../resources/homepage/account.png" width="25" class="icon0">
+            <!--add to cart counter-->
+                <button class="mybutton" id="myButton"><img src="../resources/homepage/cart.png" width="25" alt="Button Image" class="icon0"></button>
+                <span id="counter">0</span>
+            </div>
+        </header>
+        <!-- Navigation bar || header-->
+        <div class="mini-nav" style="
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+        font-size: 20px;
+        margin-bottom:50px;
+        padding-top:100px;
+        display:flex;
+        justify-content: center;
+        color:rgb(255, 181, 52);
+        ">
+      <p style="
+      font-size:2em;
+      box-shadow: 0 0 5px rgb(255, 181, 52);
+      padding: 0px 10px;
+      ">ABOUT US</p>
+    </div>
+        <div class="profile-container profile sangam_container">
+        <img src="../resources/about_us/sangam.png"class="pp">
+        <div class="info-container">
+            <p class="role">Representor/Content Manager</p>
+            <table>
+                <tr>
+                    <th>Attribute</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td class="info_name"><span class="details_q">Sangam Sunar</span></td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td class="info_age"><span class="details_q">20</span></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td class="info_email"><span class="details_q">sangam.sunar.s24@icp.edu.np</span></td>
+                </tr>
+                <tr>
+                    <td>Education Level</td>
+                    <td class="info_education"><span class="details_q">Bachelor's Degree in Information Technology (Informatic Collage)</span></td>
+                </tr>
+                <tr>
+                    <td>Expertise</td>
+                    <td class="info_education"><span class="details_q">A highly motivated communicator who bridges the gap between content creation and group representation, 
+                        fostering collaboration for impactful results.</span></td>
+                </tr>
+            </table>
+            </div>
+            </div>
+            <hr>
+            <div class="profile-container profile prashanta_container">
+                <div class="info-container">
+                    <p class="role">Creative Director</p>
+                    <table>
+                        <tr>
+                            <th>Attribute</th>
+                            <th>Details</th>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td class="info_name"><span class="details_q">Prashanta Thapa</span></td>
+                        </tr>
+                        <tr>
+                            <td>Age</td>
+                            <td class="info_age"><span class="details_q">20</span></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td class="info_email"><span class="details_q">prashanta.thapa.s24@icp.edu.np</span></td>
+                        </tr>
+                        <tr>
+                            <td>Education Level</td>
+                            <td class="info_education"><span class="details_q">Bachelor's Degree in Information Technology (Informatic Collage)</span></td>
+                        </tr>
+                        <tr>
+                            <td>Expertise</td>
+                            <td class="info_education"><span class="details_q">Results architect. Sets ambitious goals, motivates teams, and delivers measurable
+                                 creative outcomes that drive project success.</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <img src="../resources/about_us/prashant.jpg"class="pp">
+            </div>
+            <hr>
+            <div class="profile-container profile dolma_container">
+                <img src="../resources/about_us/domla.jpg"class="pp">
+                <div class="info-container">
+                    <p class="role">Creative Writer</p>
+                    <table>
+                        <tr>
+                            <th>Attribute</th>
+                            <th>Details</th>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td class="info_name"><span class="details_q">Dawa Dolma Gurung</span></td>
+                        </tr>
+                        <tr>
+                            <td>Age</td>
+                            <td class="info_age"><span class="details_q">19</span></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td class="info_email"><span class="details_q">dawa.dolma.gurung.s24@icp.edu.np</span></td>
+                        </tr>
+                        <tr>
+                            <td>Education Level</td>
+                            <td class="info_education"><span class="details_q">Bachelor's Degree in Information Technology (Informatic Collage)</span></td>
+                        </tr>
+                        <tr>
+                            <td>Expertise</td>
+                            <td class="info_education"><span class="details_q">Crafts compelling narratives that capture attention, guide readers 
+                                on a journey, and achieve the desired outcome (e.g., positive, negative and importance of Technology in business).</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <hr>
+            <div class="profile-container profile sarrok_container">
+                <div class="info-container">
+                    <p class="role">Graphic Designer</p>
+                    <table>
+                        <tr>
+                            <th>Attribute</th>
+                            <th>Details</th>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td class="info_name"><span class="details_q">Sarrok Thapa</span></td>
+                        </tr>
+                        <tr>
+                            <td>Age</td>
+                            <td class="info_age"><span class="details_q">18</span></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td class="info_email"><span class="details_q">sarrok.thapa.s24@icp.edu.np</span></td>
+                        </tr>
+                        <tr>
+                            <td>Education Level</td>
+                            <td class="info_education"><span class="details_q">Bachelor's Degree in Information Technology (Informatic Collage)</span></td>
+                        </tr>
+                        <tr>
+                            <td>Expertise</td>
+                            <td class="info_education"><span class="details_q">Stays ahead of the curve on design trends, incorporating innovative elements 
+                                while maintaining brand consistency and visual appeal.</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <img src="../resources/about_us/sarrok2.jpg"class="pp">
+            </div>
+            <hr>
+            <div class="profile-container profile pranjal_container">
+                <img src="../resources/about_us/pranjal.jpg"class="pp">
+                <div class="info-container">
+                    <p class="role">Content Manager</p>
+                    <table>
+                        <tr>
+                            <th>Attribute</th>
+                            <th>Details</th>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td class="info_name"><span class="details_q">Pranjal Chhetri</span></td>
+                        </tr>
+                        <tr>
+                            <td>Age</td>
+                            <td class="info_age"><span class="details_q">20</span></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td class="info_email"><span class="details_q">sangam.sunar.s24@icp.edu.np</span></td>
+                        </tr>
+                        <tr>
+                            <td>Education Level</td>
+                            <td class="info_education"><span class="details_q">Bachelor's Degree in Information Technology (Informatic Collage)</span></td>
+                        </tr>
+                        <tr>
+                            <td>Expertise</td>
+                            <td class="info_education"><span class="details_q">Sources compelling content, manages writers and editors,
+                                 and oversees the entire content creation process, ensuring a consistent voice and high quality.</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+        </div>    
+        <!--form-->
+        <div class="form-main-container" style="
+        margin: 50px;   
+        ">
+            <label class="getintouch">Get In Touch...</label>
+            <form class="form-container">
+                <p style="
+                    font-size: 2em;
+                    color:rgb(255, 181, 52);
+                    background-color: rgb(101, 183, 65);
+                    border-radius: 6px;
+                    ">Sign-Up</p>
+                <input type="name" id="name" placeholder="Full Name" required>
+                <input type="text" id="number" placeholder="980XXXXXXX" required>                    
+                <input type="email" id="email" placeholder="example@gmail.com" required>
+                <input type="password" id="password" placeholder="password" required>
+                <p>By clicking Agree & Join, you agree to the Privacy policy.</p>
+                <input type="submit" class="submit_button" id="submit" value="Agree & Join" onclick="return valid()" action="../homepage.html">
+            </form>
+        </div>
+        <footer>
+            <section class="foot0">
+              <div class="content0">
+                <h3>Policy Info</h3>
+                <li>Cancle and Refund</li>
+                <li>Privacy Policy</li>
+                <li>Terms and Conditions</li>
+                <li>Security</li>
+              </div>
+      
+              <div class="content0">
+                <h3>Quick Links</h3>
+                <li>Home</li>
+                <li>Blog</li>
+                <li>Product</li>
+                <li>Research</li>
+                <li>About Us</li>
+              </div>
+      
+              <div class="content0">
+                <h3>Company Info</h3>
+                <li>About US</li>
+                <li>Code Of Conduct</li>
+                <li>Follow us</li>
+                <img src="../resources/homepage/insta.png" width="40px" height="40px">
+                <img src="../resources/homepage/fb.png" width="40px" height="40px">
+                <img src="../resources/homepage/tt.png" width="40px" height="40px">
+              </div>
+      
+          
+            </section>
+      
+            <div class="email_java">
+              <form name="myform" onsubmit="return validateform()">
+                <input type="email" name="email" placeholder="E-mail"></br> 
+                <input type= "submit" name="submit">
+              </form>
+            </div>
+            
+            <div class="end">
+              ©2024 All Right Reserved By GreenGrub
+            <div>
+        </footer>
+        <script>
+            function valid(){
+                var name = document.getElementById("name");
+                var number = document.getElementById("number");
+                var email = document.getElementById("email");
+                var password = document.getElementById("password");
+                if(name.value.trim()==""){
+                    alert("Full name cannot be blank!");
+                    name.style.border = "3px solid red";
+                    return false;
+                }
+                else if(number.value.trim()==""){
+                    alert("Phone Number  cannot be blank!");
+                    number.style.border = "3px solid red";
+                    return false;
+                }
+                //else if(number.trim().length){
+                  //  alert("Invalid Phone number!");
+                    //return false;
+                //}
+                else if(password.value.trim().length < 5){
+                    alert("Too Short Password!");
+                    password.style.border = "3px solid red";
+                    return false;
+                }
+                else{
+                    alert("Thanks for loggging!")
+                    return true;
+                }
+            }
+        </script>
+    </body>
+    
+</html>

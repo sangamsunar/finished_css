@@ -1,0 +1,257 @@
+<html>
+    <head>
+        <title>Research </title>
+        <link rel="stylesheet" href="../style.css">
+        <meta name="description" content="Grocery store"/>
+		<meta name="keywords" content="HTML,CSS,JS"/>
+		<meta name="author" content="Prashanta Thapa, Sangam Sunar, Dawa Dolma Gurung, Sarrok Magar, Pranjal Chettri"/>
+        <style>
+            /* CSS for the navigation bar */
+            .navbar0{
+                top:0;
+                left:-2px;
+            }
+            .heading{
+                text-align: center;
+                text-decoration: underline;
+                color:black;
+                font-weight:bold ;
+                font-size:20px ;
+                padding: 5%;
+                font-family: consolas;
+            }
+            body{
+                background-color:white;
+            }
+            .all{
+                background-color: rgb(251, 246, 238);
+                display:flex;
+                justify-content: center;
+                border-radius: 12px;
+            }
+            .researched{
+                margin:25px;
+                padding:10px;
+            }
+            a{
+                cursor: pointer;
+                color: orange;
+            }    
+            .follow{
+                padding: 4%;
+                margin: 2%;    
+                grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+                align-items: center;
+                display: flex;
+            }
+            </style>
+    </head>
+ <body>
+    <!--start of header-->
+    <header class="navbar0">
+        <img src="../resources/homepage/logo.png">
+        <div class="nav-links0">
+          <a href="../homepage.html" class="nav-button0">Home</a>
+          <a href="../pages/products/products.html" class="nav-button0">Products</a>
+          <a href="../pages/blog/blog.html" class="nav-button0">Blog</a>
+          <a href="../pages/research.html" class="nav-button0">Research</a>
+          <a href="../pages/aboutus.html" class="nav-button0">About Us</a>
+        </div>
+        <div class="icons0">
+          <img src="../resources/homepage/search.png" width="29" class="icon0">
+          <img src="../resources/homepage/account.png" width="25" class="icon0">
+          <!--add to cart counter-->
+            <button class="mybutton" id="myButton"><img src="../resources/homepage/cart.png" width="25" alt="Button Image" class="icon0"></button>
+            <span id="counter">0</span>
+        </div>
+      </header>
+    <!--start of header-->
+    <div class="mini-nav" style="
+    font-size: 20px;
+    margin-bottom:50px;
+    padding-top:100px;
+    display:flex;
+    justify-content: center;
+    ">
+      <p style="
+      font-size:2em;
+      color:rgb(255, 181, 52);
+      box-shadow: 0 0 5px rgb(255, 181, 52);
+      padding: 0px 10px;
+      ">RESEARCH</p>
+    </div>
+    <HR>
+<!--body part starts-->
+    <div class="main_container" style="margin:90px auto; width:80%;"><!--inline css-->
+       
+        <h1 class=heading> Home Page </h1>
+        <section class="all">
+            <div class="researched">
+                <h3>Referenced</h3>
+                <br>
+                <figure>
+                <img src="../resources/research/homeim.png" alt="research" height="250px" mini-width="80%" border="2px">
+                <figcaption>Figure: Referenced Home Page </figcaption>
+                </figure>
+                <br>
+                <p>This website inspired us to create our homepage, which can be seen in the center.
+                    <br>
+                    Link for the website:
+                    <a href="https://preview.themeforest.net/item/orfarm-grocery-food-store-ecommerce-next-js-template/full_screen_preview/50522108?_ga=2.143562226.619457511.1713033970-587004829.1713033970">https://www.themeforest.net</a>
+                </p>
+            </div>
+            <div class="researched">
+                <h3>Implemented</h3>
+                <br>
+                <figure>
+                <img src="../resources/research/homedone.png" alt="implement" height="250px" max-width="80%" border="2px">
+                <figcaption>Figure: Implemented Home Page</figcaption>
+                </figure>
+                <br>
+                <p>
+                    Here, we created an explore button using CSS and added an image using the image tag in the center. Additionally, clicking the button will take you to the product page.
+                </p>
+                <br>
+            </div>
+        </section>
+        <br>
+        <hr>
+        <h1 class=heading> Product Page </h1>
+        <div class="all">
+            <section class="researched">
+                <h3>Referenced</h3>
+                <br>
+                <figure>
+                <img src="../resources/research/productref.png" alt="research" height="350px" width="100%" border="2px">
+                <figcaption>Figure: Referenced Product Page </figcaption>
+                </figure>
+                <br>
+                <p>We have got the idea for our product page from this website.
+                    <br>
+                    Link for the website:
+                    <a href="https://www.brother.in/en/products/all-printers">https://www.brother.in/en/products/all-printers</a>
+                </p>
+            </section>
+            <section class="researched">
+                <h3>Implemented</h3>
+                <br>
+                <figure>
+                <img src="../resources/research/productdone.png" alt="implement" height="350px" width="100%" border="2px">
+                <figcaption>Figure: Implemented Product Page</figcaption>
+                </figure>
+                <br>
+                <p>Using the reference as a guide, we have inserted the products in columnar fashion, resulting in a wonderfully listed product.</p><br>
+            </section>
+        </div>
+        <br>
+        <hr>
+        <h2 class="heading"> Blog Page </h2>
+        <div class="all">
+            <section class="researched">
+                <h3>Referenced</h3>
+                <br>
+                <figure>
+                <img src="../resources/research/blogref.png" alt="research" height="350px" width="100%" border="2px">
+                <figcaption>Figure: Referenced Blog Page </figcaption>
+                </figure>
+                <br>
+                <p>We got the inspiration for my blog page from this video.
+                    <br>
+                    Link for the website:<br>
+                    <a href="https://www.youtube.com/watch?v=lgX38fNbxmw">https://www.youtube.com/watch?v=lgX38fNbxmw</a>
+                </p>
+            </section>
+            <section class="researched">
+                <h3>Implemented</h3>
+                <br>
+                <figure>
+                <img src="../resources/research/blogim.png" alt="implement" height="350px" width="100%" border="2px">
+                <figcaption>Figure: Implemented Blog Page</figcaption>
+                </figure>
+                <br>
+                <p>Inspired by a mentioned video, I added an extra button to increase appeal and save space.</p><br>
+            </section>
+        </div>
+        <br>
+        <hr>
+        <h2 class=heading> Research Page </h2>
+        <div class="all">
+            <section class="researched">
+                <h3>Research</h3>
+                <br>
+                <figure>
+                <img src="../resources/research/researchim.png" alt="implement" height="350px" width="70%" border="2px">
+                <figcaption>Figure: Implemented Research Page</figcaption>
+                </figure>
+                <br>
+                <p>I've designed the research page in a way suggested by the question and personalized manner.</p><br>
+            </section>
+        </div>
+        <br>
+        <hr>
+        <h2 class=heading> About us Page </h2>
+        <div class="all">
+
+            <section class="researched">
+                <h3>Implemented</h3>
+                <br>
+                <figure>
+                <img src="../resources/research/aboutusim.png" style="object-fit: cover;" alt="implement" height="350px" width="100%" border="2px">
+                <figcaption>Figure: Implemented Blog Page</figcaption>
+                </figure>
+                <br>
+                <p>I developed the member information using the vertical tabs I learned from this website. I also added a contact us form beneath it.</p>
+                <br>
+            </section>
+        </div>
+        <br>
+    </div>
+    <!--footer-->
+    <footer>
+        <section class="foot0">
+          <div class="content0">
+            <h3>Policy Info</h3>
+            <li>Cancle and Refund</li>
+            <li>Privacy Policy</li>
+            <li>Terms and Conditions</li>
+            <li>Security</li>
+          </div>
+  
+          <div class="content0">
+            <h3>Quick Links</h3>
+            <li>Home</li>
+            <li>Blog</li>
+            <li>Product</li>
+            <li>Research</li>
+            <li>About Us</li>
+          </div>
+  
+          <div class="content0">
+            <h3>Company Info</h3>
+            <li>About US</li>
+            <li>Code Of Conduct</li>
+            <li>Follow us</li>
+            <img src="../resources/homepage/insta.png" width="40px" height="40px">
+            <img src="../resources/homepage/fb.png" width="40px" height="40px">
+            <img src="../resources/homepage/tt.png" width="40px" height="40px">
+          </div>
+  
+      
+        </section>
+  
+        <div class="email_java">
+          <form name="myform" onsubmit="return validateform()">
+            <input type="email" name="email" placeholder="E-mail"></br> 
+            <input type= "submit" name="submit">
+          </form>
+        </div>
+        
+        <div class="end">
+          ©2024 All Right Reserved By GreenGrub
+        <div>
+        <!--end of footer-->
+    </footer>
+  
+    </body>
+  </html>
+                     

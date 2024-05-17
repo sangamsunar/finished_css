@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Technology</title>
+        <link rel="stylesheet" href="../../../style.css">
+        <style>
+            .main-container{
+                display: flex;
+                background-color:rgb(193, 242, 176);
+                padding-top: 100px;
+            }
+            .title-container{
+                width: 50%;
+                text-align: center;
+                font-size: 100px;
+
+            }
+            .para-container{
+                width: 50%;
+                margin-top: 50px;
+            }
+            
+            p{
+                margin:0;
+                letter-spacing: 2px;
+                line-height: 1.5;
+            }
+            .img1{
+                float: center;
+                margin-top: 10px;
+                border-radius: 20px;
+                transition:1s;
+            }
+            .img1:hover{
+                border-radius: 0;
+               
+            }
+            .Sub-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+        
+            }
+            .another-container{
+                background-color: rgb(251, 246, 238);
+                position: relative;
+                display: flex;
+            }
+            .more-img{
+                width: 400px;
+                height:350px;
+                object-fit: cover;
+            }
+            .title-2{
+                position: absolute;
+                top: 100px;
+                bottom: 10%;
+                left: 140px;
+                font-size: 25px;
+                color: burlywood;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!--header-->
+        <header class="navbar0">
+            <img src="../../../resources/homepage/logo.png">
+            <div class="nav-links0">
+              <a href="../../../homepage.html" class="nav-button0">Home</a>
+              <a href="../../products/products.html" class="nav-button0">Products</a>
+              <a href="/development/pages/blog/blog.html" class="nav-button0">Blog</a>
+              <a href="/development/pages/research.html" class="nav-button0">Research</a>
+              <a href="/development/pages/aboutus.html" class="nav-button0">About Us</a>
+            </div>
+            <div class="icons0">
+              <img src="../../../resources/homepage/search.png" width="29" class="icon0">
+              <img src="../../../resources/homepage/account.png" width="25" class="icon0">
+              <!--add to cart counter-->
+                <button class="mybutton" id="myButton"><img src="../../../resources/homepage/cart.png" width="25" alt="Button Image" class="icon0"></button>
+                <span id="counter">0</span>
+            </div>
+          </header>
+        <div class="main-container">
+            <div class="title-container">
+            <p> Technology</p>
+            <img src="../../../resources/blog/technology.jpeg" class="img1">
+            </div>
+            <div class="para-container">
+                <p class="paragraph">
+                Technology refers to the tools, techniques, and processes used to create, produce, and use
+                goods and services. It can refer to the use of machines and equipment,as well as to 
+                the application of scientific and mathematical principles to the design and operation of machines
+                 and systems. Technology is often used to solve practical prorblems and to enhance the quality
+                of human life, and it has played a central role in the development and advancement of civilizations
+                throughout history. <br><br> 
+                It can refer to the use of machines and equipment,as well as to 
+                the application of scientific and mathematical principles to the design and operation of machines
+                and systems. Technology is often used to solve practical prorblems and to enhance the quality
+                of human life, and it has played a central role in the development and advancement of civilizations
+                throughout history.
+                <br><br> Technology refers to the tools, techniques, and processes used to create, produce, and use
+                goods and services. It can refer to the use of machines and equipment,as well as to 
+                the application of scientific and mathematical principles to the design and operation of machines
+                 and systems. Technology is often used to solve practical prorblems and to enhance the quality
+                of human life, and it has played a central role in the development and advancement of civilizations
+                throughout history.
+                <br><br> Technology refers to the tools, techniques, and processes used to create, produce, and use
+                goods and services. It can refer to the use of machines and equipment,as well as to 
+                the application of scientific and mathematical principles to the design and operation of machines
+                 and systems. Technology is often used to solve practical prorblems and to enhance the quality
+                of human life, and it has played a central role in the development and advancement of civilizations
+                throughout history.
+            </div>
+        </div>
+
+    <div class="Sub-container">
+            <div class="another-container">
+            <a href="../sub-pages/positive_impact.html"><div>
+            <img src="../../../resources/blog/good.jpg" class="img1 more-img">
+            <p class="title-2">Positive Impact</p>
+            </div>
+            </a>
+        </div>
+        <div class="another-container">
+            <a href="../sub-pages/negative_impact.html"><div>
+                <img src="../../../resources/blog/neg.jpg" class="img1 more-img">
+                <p class="title-2">Negative Impact</p>
+            </div>
+            </a>
+        </div>
+        <div class="another-container">
+            <a href="../sub-pages/impact_business.html"><div>
+                <img src="../../../resources/blog/workplace.jpg" class="img1 more-img">
+                <p class="title-2">Business Impact</p>
+            </div>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <section class="foot0">
+          <div class="content0">
+            <h3>Policy Info</h3>
+            <li>Cancle and Refund</li>
+            <li>Privacy Policy</li>
+            <li>Terms and Conditions</li>
+            <li>Security</li>
+          </div>
+  
+          <div class="content0">
+            <h3>Quick Links</h3>
+            <li>Home</li>
+            <li>Blog</li>
+            <li>Product</li>
+            <li>Research</li>
+            <li>About Us</li>
+          </div>
+  
+          <div class="content0">
+            <h3>Company Info</h3>
+            <li>About US</li>
+            <li>Code Of Conduct</li>
+            <li>Follow us</li>
+            <img src="/development/resources/homepage/insta.png" width="40px" height="40px">
+            <img src="/development/resources/homepage/fb.png" width="40px" height="40px">
+            <img src="/development/resources/homepage/tt.png" width="40px" height="40px">
+          </div>
+  
+      
+        </section>
+  
+        <div class="email_java">
+          <form name="myform" onsubmit="return validateform()">
+            <input type="email" name="email" placeholder="E-mail"></br> 
+            <input type= "submit" name="submit">
+          </form>
+        </div>
+        
+        <div class="end">
+          ©2024 All Right Reserved By GreenGrub
+        <div>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,173 @@
+  /* CSS for the navigation bar */
+  body{
+  }
+  *{
+    text-decoration: none;
+    list-style: none;
+    user-select: none;
+  }
+  .navbar0{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(255, 181, 52);
+    font-family:consolas;     
+    padding: 10px;
+    z-index: 100;
+    position:fixed;
+    width:100%;
+    box-sizing: border-box;
+  }
+  .nav-links0{
+    display: flex;
+    gap: 40px;  
+  }
+  .navbar0 a{
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    transition: 100ms;   
+  }
+
+  .navbar0 a:hover {
+    color: white;
+  }
+
+  .nav-links0 {
+    margin:0 300;
+  }
+
+  .icons0 img{
+    margin:0 15px ;
+
+  }
+  .icon0{
+    transition: 0.25s;
+  }
+
+  .icon0:hover{
+    filter: invert();
+  }
+
+  .mybutton:hover .icon{
+    filter: invert();
+  }
+
+  .mybutton{
+    background-color: #47d34c; /* Green background */
+        padding: 8px 15px;
+        border: none; 
+        border-radius: 50px; 
+        transition: all 0.5s ease-in-out;      
+  }
+  .myButton:hover {
+        background-color: #2ac040;
+  
+  }
+  .back{
+    position: relative;
+    width: 100%; 
+  }
+  .mybutton{
+    position:relative;
+  }
+  #counter{
+    position:absolute;
+    user-select: none;
+    background-color:white;
+    text-align: center;
+    width: 20px;
+    height:20px;
+    border-radius:50%;
+    right: 10px;
+    top: 10px;
+  }
+.text{
+position: absolute;
+top: 56%;
+left: 70%;
+transform: translate(-50%, -50%);
+color: rgb(11, 140, 76);
+font-size: 80px;
+font-family: Georgia;
+text-align: left justify;
+line-height: 1.2;
+}
+
+.explore{
+background-color: #9fd30fbd; 
+        padding: 8px 20px 20px;
+        border-radius: 50px;  
+        font-size: 50px;
+        letter-spacing: 2px;
+        text-decoration: none;
+        font-family: consolas;
+}
+
+.explore:hover{
+ color: antiquewhite;
+}
+
+.content0 {                   
+padding: 4%;
+margin: 2%;    
+grid-template-columns: repeat(auto-fit, minmax(250px, auto));  
+gap: 2rem;
+align-items: center;
+font-size: 20px;
+
+}
+
+.foot0 {
+padding: 18px 11% 10px;
+display: flex; 
+justify-content:center;
+align-items: top;
+}
+footer{
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background: rgb(193, 242, 176);
+text-align: left;
+}
+
+
+.readmore{
+background-color: #78f272;
+font-size: 30px;
+padding: 20px 20px 20px 20px;
+border-radius: 20px;
+}
+.email_java{
+display:flex; 
+justify-content: center;
+align-items: center;
+}
+.email_java form input[type="email"]{
+width: 300px;
+max-width: 100%;
+padding: 12px 15px;
+border-radius: 20px;
+border: none;
+outline: none;
+margin: 0px 10px 20px 0px ;
+font-size: 16px;
+font-weight: 600;
+}
+
+.email_java form input[type="submit"]{
+padding: 10px 10px;
+background: var(gray);
+color: var(--text-color);
+border: none;
+outline: none;
+margin: 0px 10px 20px 0px ;
+font-size: 16px;
+font-weight: 600;
+border-radius: 20px;
+transition: all 0.2s ease;
+}
+  li:hover{
+    color: white;
+    cursor: pointer;
+  }
+    /* CSS for the navigation bar */
